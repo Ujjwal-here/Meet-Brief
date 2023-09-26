@@ -4,6 +4,7 @@ console.log("Content Runs");
 const mychilds = document.getElementsByClassName("iOzk7");
 let script = [];
 let last_speaker = "";
+
 const observer = new MutationObserver((mutationList) => {
   mutationList.forEach((mutation) => {
     if (
