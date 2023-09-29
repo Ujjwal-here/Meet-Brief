@@ -1,12 +1,12 @@
 {
     "manifest_version": 3,
-    "name": "My Chrome Extension",
+    "name": "Meet-Brief",
     "version": "1.0",
-    "description": "This is my Chrome extension.",
+    "description": "A Chrome Extension",
     "content_scripts": [
         {
             "matches": [
-                "https://meet.google.com/*"
+                "<all_urls>"
             ],
             "js": [
                 "content.js"
