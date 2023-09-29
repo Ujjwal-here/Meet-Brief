@@ -1,6 +1,8 @@
 console.log("Content Runs");
 
 //Extracts Caption For Particular Speaker and Saves it LOCALLY
+
+
 const mychilds = document.getElementsByClassName("iOzk7");
 let script = [];
 let last_speaker = "";
@@ -41,3 +43,16 @@ const observer = new MutationObserver((mutationList) => {
     }
   });
 });
+
+chrome.runtime.onMessage.addListener(function (message,sender,response){
+  if (message.message==="Generate"){
+    observer.observe(mychilds[0],{
+      subtree:true,
+      childList:true,
+    })
+  }
+  else{
+    observer.disconnect()
+  }
+
+})
