@@ -20,7 +20,7 @@ body {
 }
 
 
-.auth{
+.auth {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,6 +88,7 @@ input::placeholder {
     text-transform: uppercase;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    cursor: pointer;
 }
 
 button {
