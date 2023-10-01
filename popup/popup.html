@@ -1,15 +1,106 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8"/>
+    <meta
+        name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Document</title>
-    <link rel="stylesheet" href="popup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="popup.css"/>
 </head>
 <body>
+<section class="main">
 
+<!-- MAIN SIGNUP   <-->
+    <div class="auth">
+        <div class="container">
+            <h2 class="heading">
+                SignUp with us Today
+            </h2>
+            <p class="para">
+                Enter your Email and choose a password to set up your Account
+            </p>
+            <form class="form">
+                <label for="email-address-sign">Email Address</label>
+                <input
+                        type="email"
+                        placeholder="Email Address"
+                        name="email-address"
+                        id="email-address-sign"
+                />
+                <label for="password-sign">Password</label>
+                <input
+                        type="password"
+                        placeholder="Password"
+                        name="password"
+                        id="password-sign"
+                />
+            </form>
+            <div class="options">
+                <p>Already have an Account ?</p>
+                <span class="option-auth">Login</span>
+            </div>
+            <button type="submit">Create Account</button>
+        </div>
+    </div>
+
+    <!-- MAIN LOGIN  <-->
+    <div class="auth">
+        <div class="container">
+            <h2 class="heading">
+                Login with us Today
+            </h2>
+            <p class="para">
+                Enter your Email and choose a password to set up your Account
+            </p>
+            <form class="form">
+                <label for="email-address-log">Email Address</label>
+                <input
+                        type="email"
+                        placeholder="Email Address"
+                        name="email-address"
+                        id="email-address-log"
+                />
+                <label for="password-log">Password</label>
+                <input
+                        type="password"
+                        placeholder="Password"
+                        name="password"
+                        id="password-log"
+                />
+            </form>
+            <div class="options">
+                <p>Don't have an Account</p>
+                <span class="option-auth">Signup</span>
+            </div>
+            <button type="submit">Proceed</button>
+        </div>
+    </div>
+
+    <!-- MAIN POPUP  <-->
+    <div class="main-popup">
+        <h1 class="brand-heading">Meet-Brief</h1>
+        <p class="brand-quote">Transform your life with Just a Click !</p>
+        <ul class="section-cards">
+            <li class="card">
+                <span>1</span>
+                <p></p>
+                Turn On
+            </li>
+            <li class="card"><span>2</span>Generate</li>
+            <li class="card"><span>3</span>Download</li>
+        </ul>
+        <button class="generate">Generate</button>
+        <button class="stop">Stop</button>
+        <button class="download">Download PDF</button>
+    </div>
+</section>
 </body>
 <script src="popup.js"></script>
 </html>

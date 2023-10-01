@@ -20,6 +20,6 @@ stopButton[0].addEventListener("click",function () {
 })
 
 
-downloadButton[0].addEventListener("click", function (){
-    console.log("Download PDF")
-})
+//downloadButton[0].addEventListener("click", function (){
+//    console.log("Download PDF")
+//})
