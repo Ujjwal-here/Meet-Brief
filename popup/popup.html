@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8"/>
     <meta
-        name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+            name="viewport"
     />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet">
-    <link rel="stylesheet" href="popup.css"/>
+    <link href="popup.css" rel="stylesheet"/>
+    <script src="popup.js"></script>
 </head>
 <body>
 <section class="main">
 
-<!-- MAIN SIGNUP   <-->
-    <div class="auth">
+    <!-- MAIN SIGNUP   <-->
+    <div class="auth" id="signup">
         <div class="container">
             <h2 class="heading">
                 SignUp with us Today
@@ -26,32 +27,33 @@
             <p class="para">
                 Enter your Email and choose a password to set up your Account
             </p>
-            <form class="form">
+            <form class="form" id="signupForm">
                 <label for="email-address-sign">Email Address</label>
                 <input
-                        type="email"
-                        placeholder="Email Address"
-                        name="email-address"
                         id="email-address-sign"
+                        name="email-address"
+                        placeholder="Email Address"
+                        type="email"
                 />
                 <label for="password-sign">Password</label>
                 <input
-                        type="password"
-                        placeholder="Password"
-                        name="password"
                         id="password-sign"
+                        name="password"
+                        placeholder="Password"
+                        type="password"
                 />
+                <div class="options">
+                    <p>Already have an Account ?</p>
+                    <span class="option-auth" id="toLogin">Login</span>
+                </div>
+                <button type="submit">Create Account</button>
             </form>
-            <div class="options">
-                <p>Already have an Account ?</p>
-                <span class="option-auth">Login</span>
-            </div>
-            <button type="submit">Create Account</button>
+
         </div>
     </div>
 
     <!-- MAIN LOGIN  <-->
-    <div class="auth">
+    <div class="auth" id="login">
         <div class="container">
             <h2 class="heading">
                 Login with us Today
@@ -59,32 +61,33 @@
             <p class="para">
                 Enter your Email and choose a password to set up your Account
             </p>
-            <form class="form">
+            <form class="form" id="loginForm">
                 <label for="email-address-log">Email Address</label>
                 <input
-                        type="email"
-                        placeholder="Email Address"
-                        name="email-address"
                         id="email-address-log"
+                        name="email-address"
+                        placeholder="Email Address"
+                        type="email"
                 />
                 <label for="password-log">Password</label>
                 <input
-                        type="password"
-                        placeholder="Password"
-                        name="password"
                         id="password-log"
+                        name="password"
+                        placeholder="Password"
+                        type="password"
                 />
+                <div class="options">
+                    <p>Don't have an Account ?</p>
+                    <span class="option-auth" id="toSignUp">Signup</span>
+                </div>
+                <button type="submit">Proceed</button>
             </form>
-            <div class="options">
-                <p>Don't have an Account</p>
-                <span class="option-auth">Signup</span>
-            </div>
-            <button type="submit">Proceed</button>
+
         </div>
     </div>
 
     <!-- MAIN POPUP  <-->
-    <div class="main-popup">
+    <div class="main-popup" id="popup">
         <h1 class="brand-heading">Meet-Brief</h1>
         <p class="brand-quote">Transform your life with Just a Click !</p>
         <ul class="section-cards">
