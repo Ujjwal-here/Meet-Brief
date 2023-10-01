@@ -23,6 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const signUrl = "http://146.190.9.235/auth/register/"
     const loginUrl = "http://146.190.9.235/auth/login/"
 
+    const btn_signup = document.getElementById("btn-signup")
+
 
     toLogin.addEventListener("click", function () {
         popupDiv.style.display = "none"
@@ -70,6 +72,11 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         })
     }
+
+
+    btn_signup.addEventListener("click", function () {
+        onAuthentication(signUrl, signEmail, signPassword, signupForm)
+    })
 
 
     chrome.storage.sync.get("token", function (res) {
