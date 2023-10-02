@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const popupDiv = document.getElementById("popup")
 
     const generateButton = document.getElementsByClassName("generate")
-    const stopButton = document.getElementsByClassName("save")
+    const stopButton = document.getElementsByClassName("stop")
 
     const toSignUp = document.getElementById("toSignUp")
     const toLogin = document.getElementById("toLogin")
