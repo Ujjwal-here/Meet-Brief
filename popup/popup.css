@@ -5,12 +5,13 @@
     box-sizing: border-box;
 }
 
+
 html {
-    font-family: 'Onest', sans-serif;
     font-size: 62.5%;
 }
 
 body {
+    font-family: 'Heebo', sans-serif;
     height: 50rem;
     width: 50rem;
 }
@@ -32,19 +33,16 @@ body {
 
 .heading {
     font-size: 2.8rem;
-    color: #111111;
-    font-weight: 800;
+    color: black;
+    font-weight: 900;
 }
 
-span {
-    color: #aeb2ba;
-}
 
 .para {
     font-size: 1.3rem;
-    margin-top: 1.5rem;
-    color: #aeb2ba;
-    font-weight: 600;
+    margin-top: 1rem;
+    color: #BCBCBC;
+    font-weight: 500;
 }
 
 .form {
@@ -57,7 +55,7 @@ span {
 label {
     margin-top: 1.5rem;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.1rem;
     letter-spacing: 1px;
     font-weight: 700;
 }
@@ -71,20 +69,23 @@ input {
 
 input::placeholder {
     font-size: 1.1rem;
+    font-weight: 100;
     color: #aeb2ba;
 }
 
 .options {
     display: flex;
     justify-content: space-between;
-    font-size: 1.2rem;
+    align-items: center;
+    font-size: 1.3rem;
     margin-top: 2rem;
     font-weight: 600;
 }
 
 .option-auth {
-    background: linear-gradient(to right, #08203e, #557c93);
+    background: linear-gradient(to right, #f9b16e, #f68080);
     font-weight: 900;
+    font-size: 1.4rem;
     text-transform: uppercase;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -93,41 +94,43 @@ input::placeholder {
 
 button {
     margin-top: 3rem;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     padding: 1rem 1.5rem;
     border: none;
     border-radius: 0.5rem;
-    background: linear-gradient(to right, #08203e, #557c93);
-    text-transform: uppercase;
+    background: linear-gradient(to right, #f28367, #ff5282);
     letter-spacing: 1px;
     color: white;
     font-weight: 600;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
+.main-popup {
+    margin: 3rem 2rem;
+}
 
 .brand-heading {
     font-size: 3rem;
     font-weight: 900;
     text-align: center;
-    background: linear-gradient(to right, #2278fb, #6bdfdb);
+    background: linear-gradient(to right, #f28367, #ff5282);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    text-transform: uppercase;
 }
 
 .brand-quote {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     text-align: center;
     letter-spacing: 1px;
     font-weight: 500;
-    text-transform: uppercase;
 }
 
 .section-cards {
     margin-top: 5rem;
     display: flex;
-    gap: 3rem;
+    flex-direction: row;
+    gap: 2rem;
     font-size: 1.7rem;
 }
 
@@ -135,6 +138,7 @@ span {
     display: block;
     text-align: center;
     font-weight: 800;
+    font-size: 2.5rem;
 }
 
 .card {
@@ -142,5 +146,25 @@ span {
     text-decoration: none;
     list-style: none;
     border-radius: 1rem;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 1px solid lightslategray;
+}
+
+.card-title {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.card-p {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    color: #7E7E7E;
+}
+
+.btn-group {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
 }

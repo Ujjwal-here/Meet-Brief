@@ -10,7 +10,7 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet">
     <link href="popup.css" rel="stylesheet"/>
     <script src="popup.js"></script>
@@ -25,7 +25,7 @@
                 SignUp with us Today
             </h2>
             <p class="para">
-                Enter your Email and choose a password to set up your Account
+                Enter your Email and choose a Password to set up your Account
             </p>
             <form class="form" id="signupForm">
                 <label for="email-address-sign">Email Address</label>
@@ -59,7 +59,7 @@
                 Login with us Today
             </h2>
             <p class="para">
-                Enter your Email and choose a password to set up your Account
+                Enter your Email and choose a Password to set up your Account
             </p>
             <form class="form" id="loginForm">
                 <label for="email-address-log">Email Address</label>
@@ -91,16 +91,24 @@
         <h1 class="brand-heading">Meet-Brief</h1>
         <p class="brand-quote">Transform your life with Just a Click !</p>
         <ul class="section-cards">
-            <li class="card">
-                <span>1</span>
-                <p></p>
-                Turn On
+            <li class="card"><span>1</span>
+                <p class="card-title">Turn On</p>
+                <p class="card-p">Turn on captions in Google Meet</p>
             </li>
-            <li class="card"><span>2</span>Generate</li>
-            <li class="card"><span>3</span>Download</li>
+            <li class="card"><span>2</span>
+                <p class="card-title">Generate</p>
+                <p class="card-p">Click "Generate" to start extracting captions</p>
+            </li>
+            <li class="card"><span>3</span>
+                <p class="card-title">Stop</p>
+                <p class="card-p">Click "Stop" to stop extracting captions</p>
+            </li>
         </ul>
-        <button class="generate">Generate</button>
-        <button class="stop">Stop</button>
+        <div class="btn-group">
+            <button class="generate">Generate</button>
+            <button class="stop">Stop</button>
+        </div>
+
     </div>
 </section>
 </body>
